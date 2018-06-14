@@ -4,7 +4,10 @@ module.exports={
         console.log(requery)
         User.create({
             user_name:requery.name,
-            password:requery.password
+            address:requery.address,
+            locality:requery.locality,
+            block:requery.block,
+            zone:requery.zone,
         })
     }
 }
